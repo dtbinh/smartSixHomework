@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.4.15)  28 OCT 2015 09:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.4.15)  28 OCT 2015 14:38
 entering extended mode
 **C:/Users/Emmanuel/Documents/GitHub/smartSixHomework/Report/report.tex
 (C:/Users/Emmanuel/Documents/GitHub/smartSixHomework/Report/report.tex
@@ -630,31 +630,47 @@ l.77 	\newpage
 
 ]
 Chapter 1.
-[2
+<images_not_compressed/endEffector.png, id=26, 426.84468pt x 406.51875pt>
+File: images_not_compressed/endEffector.png Graphic file (type png)
 
-] (C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.lof)
+<use images_not_compressed/endEffector.png>
+Package pdftex.def Info: images_not_compressed/endEffector.png used on input li
+ne 86.
+(pdftex.def)             Requested size: 256.0748pt x 243.89452pt.
+ [2
+
+ <C:/Users/Emmanuel/Documents/GitHub/smartSixHomework/Report/images_not_compres
+sed/endEffector.png>]
+(C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.lof
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
 \tf@lof=\write5
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
 
 [3
 
 ]
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 86.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 95.
  (C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 30513D0D2601CB0F0792CEE563A71B1D;48.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 7102 strings out of 493921
- 100218 string characters out of 3148877
- 189957 words of memory out of 3000000
- 10292 multiletter control sequences out of 15000+200000
- 11377 words of font info for 25 fonts, out of 3000000 for 9000
+ 7128 strings out of 493921
+ 100624 string characters out of 3148877
+ 189992 words of memory out of 3000000
+ 10309 multiletter control sequences out of 15000+200000
+ 13816 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 30i,13n,43p,298b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,13n,43p,513b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecbx2074.pk> <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecrm1095.pk> <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\
@@ -664,9 +680,9 @@ ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\E
 mmanuel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
 > <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\eccc1728.pk>
-Output written on report.pdf (4 pages, 75646 bytes).
+Output written on report.pdf (4 pages, 387332 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 19 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 24 words of extra memory for PDF output out of 10000 (max. 10000000)
 
