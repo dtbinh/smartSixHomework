@@ -3,3 +3,4 @@
 \contentsline {chapter}{\numberline {2}Work}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Compute the roto-translation matrix}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Required}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Compute the matrix}{4}{subsection.2.1.2}
