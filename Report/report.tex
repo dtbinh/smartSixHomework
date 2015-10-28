@@ -117,8 +117,9 @@
 	On the figure \ref{alpha} we can see the different axes of the robot. Each line correspond to a axe and the $Z$ vector corresponds to the rotation axe. Then, if we take the second line, we have to make a clockwise rotation of $\frac{\pi}{2}$ to get its $Z$ axe.\\
 	We also need a vector that we will call $a$ that stores the distances between the axes that have the same $Z$ orientation 2 by 2. We get this values in on the figure 4 of the documentation of the project. With the same figure we fill the $di$ vector which stores the distance of the axes that doesn\rq{}t have the same $Z$ orientation.
 	Finally, we create the $teta\_i$ vector to store the angles of in parameter of the function.
-	\begin{center}
+
 	\begin{figure}
+	\centering
 		\begin{tabular}{c|c|c|c|c|c}
 		Link & $\alpha$ & $\theta$ & a & d & $ \overline{q}$\\
 		\hline
@@ -138,9 +139,9 @@
 		\hline
 		8 & 0 & $\theta_8$ & 0 & 0.095 & $\theta_8$\\
 		\end{tabular}
-	
+		\caption{DH parameter table for each junction}
 	\end{figure}
-	\end{center}
+
 	
 	
 	\subsection{Compute the matrix}
@@ -174,8 +175,12 @@
 	 
 	 \section{Get the Euler angles}
 	\subsection{Divide the different referentials}
+		The two different referentials are \lq{}ZYZ\rq{} and \lq{}RPZ\rq{}. They are not axed the same way, that is why we differenciate 2 cases to extract the Euler angles $\phi$, $\theta$ and $\psi$.
+		
+	\subsection{Extraction of the angles}
 	
-	\newpage
+		
+	
 
 	\listoffigures
 	

@@ -7,3 +7,4 @@
 \contentsline {subsection}{\numberline {2.1.3}Get the position and the rotation matrix relative to the end-effector}{4}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Get the Euler angles}{4}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Divide the different referentials}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Extraction of the angles}{5}{subsection.2.2.2}
