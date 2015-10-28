@@ -12,6 +12,8 @@
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage[lastpage,user]{zref}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \cfoot{\thepage\ of \zpageref{LastPage}}
 \pagestyle{fancy}
 \usepackage[headsep=1cm,headheight=61pt,footskip=3cm]{geometry}
@@ -74,15 +76,13 @@
 	\ClearShipoutPicture
 	
 	\tableofcontents
-	\newpage
-	
-	
+
 	\chapter{Introduction}
 		
 	In this project we apply the theory seen in automatic and robotic course.
 	The aim is creating a function that returns the most important parameters for moving the end-effector of the robot. We can see it on the figure \ref{endEf} with it\rq{}s own axes \lq\lq{}ANS\rq\rq{}. This parameters are the position and the orientation of the end-effector, the rotation matrix of the end-effector and the roto-translation matrices for the differents input parameters (angles and translations of the joints).
 	
-	The function takes two parameters, the first is a vector values reprensenting the translation or the rotation of each axe. The is the type of representation we are in. It can be \lq\lq{}ZYZ\rq\rq{} or \lq\lq{}RPY\rq\rq{}.
+	The function takes two parameters, the first is a vector values reprensenting the translation or the rotation of each axe. The is the type of representation we are in. It can be \lq\lq{}ZYZ\rq\rq{} or \lq\lq{}RPY\rq\rq{} (roll, pitch, yaw).
 	\begin{figure}[h]
 	\center
 		\includegraphics[width=9cm]{images_not_compressed/endEffector.png}
@@ -90,7 +90,11 @@
 		\caption{Robot smart5 six with a pince on the end-effector}
 	\end{figure}
 
-	The notions aboarded  are roto-translation matrices, 
+	\chapter{Work}
+	\section{Compute the roto-translation matrix}
+	\subsection{Required}
+	To get the roto-translation matrix we need to multiply the different matrices for each junction and the $A^{0}_{n}$
+	
 
 	\listoffigures
 	
