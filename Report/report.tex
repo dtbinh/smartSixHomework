@@ -93,8 +93,17 @@
 	\chapter{Work}
 	\section{Compute the roto-translation matrix}
 	\subsection{Required}
-	To get the roto-translation matrix we need to multiply the different matrices for each junction and the $A^{0}_{n}$
+	To get the roto-translation matrix we need to multiply the different matrices for each junction and the $A^{b}_{0}$ and $A^{n}_{e}$ which are two constant matrix respectly represent the b to 0 transformation matrix and the n to e transformation matrix.
 	
+	We also need the $\alpha$ angles for each junction. We put them in a vector called alpha\_i which is $\begin{bmatrix}\frac{\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0 & \frac{-\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0\end{bmatrix}$. We obtain this values by comparing the junction $i$\rq{}s Z axis with the $(i-1)$\rq{}s Z axis.
+	
+	
+	\begin{figure}[h]
+	\center
+		\includegraphics[width=5cm]{images_not_compressed/alphaAngles.png}
+		\label{alpha}
+		\caption{Stick view of the Smart5 Six}
+	\end{figure}
 
 	\listoffigures
 	
