@@ -178,9 +178,21 @@
 		The two different referentials are \lq{}ZYZ\rq{} and \lq{}RPZ\rq{}. They are not axed the same way, that is why we differenciate 2 cases to extract the Euler angles $\phi$, $\theta$ and $\psi$.
 		
 	\subsection{Extraction of the angles}
+	In \lq{}ZYZ\rq{} we have :
+	\begin{lstlisting}
+	phi = atan2(R(2,3),R(1,3));
+	theta = atan2(sqrt(R(1,3)^2 + R(2,3)^2), R(3,3));
+        psi = atan2(R(3,2), -R(3,1));
+	\end{lstlisting}	
 	
-		
+	and for \lq{}RPY\rq{} referential we need :
+	\begin{lstlisting}
+	phi = atan2(R(2,1),R(1,1)); 
+	theta = atan2(-R(3,1), sqrt(R(3,2)^2 + R(3,3)^2));
+	psi = atan2(R(3,2), -R(3,3));
+	\end{lstlisting}
 	
+	There we compute the Euler angles in the good referential.
 
 	\listoffigures
 	

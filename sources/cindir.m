@@ -25,14 +25,39 @@ function [ p, Phi, R, A] = cindir( q, EulerAngles )
     a = [ 0 0 0.150 0.590 0.130 0 0 0]; %Creation of the vector of distances between the Oi and the Oi' origins
     %----------------------------------------------------------------------------------------------------------
     
+    limiti_giunto_inf = [-200 -200 2.9671   -3.0543    1.3963    3.6652   -2.2689    9.4248]; %m m radx6
+limiti_giunto_sup = [ 200  200 -2.9671    1.1345   -1.5708   -3.6652    2.2689   -3.1416]; %m m radx6
     
     if length(q) == 8 %Test of the dimension of the q vector
-
+    for i = [1,2,4,7]
+       if q(i) < limiti_giunto_inf(i) 
+           X = ['The value of the junction ',num2str(i),' is too little'];
+           disp(X);
+           return;
+       end
+       if q(i) > limiti_giunto_sup(i)
+           X = ['The value of the junction ',num2str(i),' is too high'];
+           disp(X);
+           return;
+       end
+    end
+    for i = [3,5,6,8]
+       if q(i) > limiti_giunto_inf(i) 
+           X = ['The value of the junction ',num2str(i),' is too little'];
+           disp(X);
+           return;
+       end
+       if q(i) < limiti_giunto_sup(i)
+           X = ['The value of the junction ',num2str(i),' is too high'];
+           disp(X);
+           return;
+       end
+    end
         
         %Creation of the joint variables from the vector q
         di = [ q(1) q(2) 0.450 0 0 0.64707 0 0.095]; %Creation of the distance vector for coordinate of the Oi origins along zi?1 
 
-        teta_i = [ 0 0 q(3) q(4) q(5) q(6) q(7) q(8) ]; %Creation of the angle vector for the angles between axes xi?1 and x i about axis zi?1
+        theta_i = [ 0 0 q(3) q(4) q(5) q(6) q(7) q(8) ]; %Creation of the angle vector for the angles between axes xi?1 and x i about axis zi?1
         %----------------------------------------------------------------------------------------------------------
         
         
@@ -40,8 +65,8 @@ function [ p, Phi, R, A] = cindir( q, EulerAngles )
 
         %Computing of the differents A matrices
         for i= 1:8
-        A(:,:,i) = [ cos(teta_i(i)) -sin(teta_i(i))*cos(alpha_i(i)) sin(teta_i(i))*sin(alpha_i(i)) a(i)*cos(teta_i(i));...
-        sin(teta_i(i)) cos(teta_i(i))*cos(alpha_i(i)) -cos(teta_i(i))*sin(alpha_i(i)) a(i)*sin(teta_i(i));...
+        A(:,:,i) = [ cos(theta_i(i)) -sin(theta_i(i))*cos(alpha_i(i)) sin(theta_i(i))*sin(alpha_i(i)) a(i)*cos(theta_i(i));...
+        sin(theta_i(i)) cos(theta_i(i))*cos(alpha_i(i)) -cos(theta_i(i))*sin(alpha_i(i)) a(i)*sin(theta_i(i));...
         0 sin(alpha_i(i)) cos(alpha_i(i)) di(i);...
         0 0 0 1];
         end
