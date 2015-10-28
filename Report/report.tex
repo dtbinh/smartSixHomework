@@ -98,7 +98,7 @@
 	
 	
 	\begin{wrapfigure}{r}{0.4\textwidth} 
-		\vspace{-2cm}
+		\vspace{-1cm}
 
  		 \begin{center}
   			\includegraphics[width=7cm]{images_not_compressed/alphaAngles.png}
@@ -112,7 +112,13 @@
 	To get the roto-translation matrix we need to multiply the different matrices for each junction and the $A^{b}_{0}$ and $A^{n}_{e}$ which are two constant matrix respectly represent the b to 0 transformation matrix and the n to e transformation matrix.\\
 	We also need the $\alpha$ angles for each junction. We put them in a vector called alpha\_i which is $\begin{bmatrix}\frac{\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0 & \frac{-\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0\end{bmatrix}$. We obtain this values by comparing the junction $i$\rq{}s Z axis with the $(i-1)$\rq{}s Z axis.\\
 	On the figure \ref{alpha} we can see the different axes of the robot. Each line correspond to a axe and the $Z$ vector corresponds to the rotation axe. Then, if we take the second line, we have to make a clockwise rotation of $\frac{\pi}{2}$ to get its $Z$ axe.\\
-	We also need a vector that we will call $a$ that stores the distances between the different axes. We get this values in on the figure 4 of the documentation of the project.\\
+	We also need a vector that we will call $a$ that stores the distances between the axes that have the same $Z$ orientation 2 by 2. We get this values in on the figure 4 of the documentation of the project. With the same figure we fill the $di$ vector which stores the distance of the axes that doesn\rq{}t have the same $Z$ orientation.
+	Finally, we create the $teta\_i$ vector to store the angles of in parameter of the function.
+	
+	\subsection{Compute the matrix}
+	
+	
+	
 	\newpage
 
 	\listoffigures
