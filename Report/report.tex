@@ -93,17 +93,27 @@
 	\chapter{Work}
 	\section{Compute the roto-translation matrix}
 	\subsection{Required}
-	To get the roto-translation matrix we need to multiply the different matrices for each junction and the $A^{b}_{0}$ and $A^{n}_{e}$ which are two constant matrix respectly represent the b to 0 transformation matrix and the n to e transformation matrix.
-	
-	We also need the $\alpha$ angles for each junction. We put them in a vector called alpha\_i which is $\begin{bmatrix}\frac{\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0 & \frac{-\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0\end{bmatrix}$. We obtain this values by comparing the junction $i$\rq{}s Z axis with the $(i-1)$\rq{}s Z axis.
 	
 	
-	\begin{figure}[h]
-	\center
-		\includegraphics[width=5cm]{images_not_compressed/alphaAngles.png}
-		\label{alpha}
-		\caption{Stick view of the Smart5 Six}
-	\end{figure}
+	
+	
+	\begin{wrapfigure}{r}{0.4\textwidth} 
+		\vspace{-2cm}
+
+ 		 \begin{center}
+  			\includegraphics[width=7cm]{images_not_compressed/alphaAngles.png}
+			\label{alpha}
+			\caption{Stick view of the Smart5 Six}
+ 		 \end{center}
+	\end{wrapfigure} 
+	
+	\vspace{1cm}
+	
+	To get the roto-translation matrix we need to multiply the different matrices for each junction and the $A^{b}_{0}$ and $A^{n}_{e}$ which are two constant matrix respectly represent the b to 0 transformation matrix and the n to e transformation matrix.\\
+	We also need the $\alpha$ angles for each junction. We put them in a vector called alpha\_i which is $\begin{bmatrix}\frac{\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0 & \frac{-\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0\end{bmatrix}$. We obtain this values by comparing the junction $i$\rq{}s Z axis with the $(i-1)$\rq{}s Z axis.\\
+	On the figure \ref{alpha} we can see the different axes of the robot. Each line correspond to a axe and the $Z$ vector corresponds to the rotation axe. Then, if we take the second line, we have to make a clockwise rotation of $\frac{\pi}{2}$ to get its $Z$ axe.\\
+	We also need a vector that we will call $a$ that stores the distances between the different axes. We get this values in on the figure 4 of the documentation of the project.\\
+	\newpage
 
 	\listoffigures
 	
