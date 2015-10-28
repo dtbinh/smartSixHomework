@@ -83,9 +83,9 @@
 	\chapter{Introduction}
 		
 	In this project we apply the theory seen in automatic and robotic course.
-	The aim is creating a function that returns the most important parameters for moving the end-effector of the robot. We can see it on the figure \ref{endEf} with it\rq{}s own axes \lq\lq{}ANS\rq\rq{}. This parameters are the position and the orientation of the end-effector, the rotation matrix of the end-effector and the roto-translation matrices for the differents input parameters (angles and translations of the joints).
+	The aim is creating a function that returns the most important parameters for moving the end-effector of the robot. We can see it on the figure \ref{endEf} with it\rq{}s own axes \lq\lq{}ANS\rq\rq{}. Those parameters are the position and the orientation of the end-effector, the rotation matrix of the end-effector and the roto-translation matrices for the different input parameters (angles and translations of the junctions).
 	
-	The function takes two parameters, the first is a vector values reprensenting the translation or the rotation of each axe. The is the type of representation we are in. It can be \lq\lq{}ZYZ\rq\rq{} or \lq\lq{}RPY\rq\rq{} (roll, pitch, yaw).
+	The function takes two parameters, the first is a vector values reprensenting the translation or the rotation of each axe. The type of representation we are in. It can be \lq\lq{}ZYZ\rq\rq{} or \lq\lq{}RPY\rq\rq{} (roll, pitch, yaw).
 	\begin{figure}[h]
 	\center
 		\includegraphics[width=9cm]{images_not_compressed/endEffector.png}
@@ -112,10 +112,10 @@
 	
 	\vspace{1cm}
 	
-	To get the roto-translation matrix we need to multiply the different matrices for each junction and the $A^{b}_{0}$ and $A^{n}_{e}$ which are two constant matrix respectly represent the b to 0 transformation matrix and the n to e transformation matrix.\\
-	We also need the $\alpha$ angles for each junction. We put them in a vector called alpha\_i which is $\begin{bmatrix}\frac{\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0 & \frac{-\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0\end{bmatrix}$. We obtain this values by comparing the junction $i$\rq{}s Z axis with the $(i-1)$\rq{}s Z axis.\\
-	On the figure \ref{alpha} we can see the different axes of the robot. Each line correspond to a axe and the $Z$ vector corresponds to the rotation axe. Then, if we take the second line, we have to make a clockwise rotation of $\frac{\pi}{2}$ to get its $Z$ axe.\\
-	We also need a vector that we will call $a$ that stores the distances between the axes that have the same $Z$ orientation 2 by 2. We get this values in on the figure 4 of the documentation of the project. With the same figure we fill the $di$ vector which stores the distance of the axes that doesn\rq{}t have the same $Z$ orientation.
+	To get the roto-translation matrix we need to multiply the different matrices for each junction and the $A^{b}_{0}$ and $A^{n}_{e}$ which are two constants matrix respectly represent the b to 0 transformation matrix and the n to e transformation matrix.\\
+	We also need the $\alpha$ angles for each junction. We put them in a vector called alpha\_i detailed here $\begin{bmatrix}\frac{\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0 & \frac{-\pi}{2} & \frac{\pi}{2} & \frac{-\pi}{2} & 0\end{bmatrix}$. We obtain this values by comparing the junction $i$\rq{}s Z axis with the $(i-1)$\rq{}s Z axis.\\
+	On the figure \ref{alpha} we can see the different axis of the robot. Each line corresponds to an axis and the $Z$ vector corresponds to the rotation axis. Then, if we take the second line, we have to make a clockwise rotation of $\frac{\pi}{2}$ to get its $Z$ axe.\\
+	We also need a vector that we will call $a$ that stores the distances between the axis that have the same $Z$ orientation 2 by 2. We get those values in on the figure 4 of the documentation of the project. With the same figure we fill the $di$ vector which stores the distance of the axis that doesn\rq{}t have the same $Z$ orientation.
 	Finally, we create the $teta\_i$ vector to store the angles of in parameter of the function.
 
 	\begin{figure}
@@ -141,7 +141,12 @@
 		\end{tabular}
 		\caption{DH parameter table for each junction}
 	\end{figure}
+\begin{figure}[h]
+	\center
+		\includegraphics[width=9cm]{images_not_compressed/schema.png}
 
+		\caption{Direct kinematic of the robot}
+	\end{figure}
 	
 	
 	\subsection{Compute the matrix}
@@ -154,7 +159,7 @@
 	0 & 0 & 0 & 1
 	\end{bmatrix} $
 
-	To store efficently the values, we use a tridimentionnal matrix $4\times4\times8$ which makes a $4\times4$ per each junction. Using a for loop, we fill the matrix using the values of the $a$, $di$ and $teta\_i$ vectors.
+	To store efficiently the values, we use a tridimensionnal matrix $4\times4\times8$ which makes a $4\times4$ per each junction. Using a \lq{}for\rq{} loop, we fill the matrix using the values of the $a$, $di$ and $teta\_i$ vectors.
 	
 	\subsection{Get the position and the rotation matrix relative to the end-effector}
 	
@@ -170,12 +175,12 @@
 	R = T([1 2 3], [1 2 3]);
 	 \end{lstlisting}
 	 
-	 There we have the $A$ transition matrix of all the junctions, the matrix of rotation from the base to the end-effector and the position of the end-effector. Now we will focus on the the Euler angles.
+	 There we have the $A$ transition matrix of all the junctions, the matrix of rotation from the base to the end-effector and the position of the end-effector. Now, we will focus on the the Euler angles.
 	 
 	 
 	 \section{Get the Euler angles}
 	\subsection{Divide the different referentials}
-		The two different referentials are \lq{}ZYZ\rq{} and \lq{}RPZ\rq{}. They are not axed the same way, that is why we differenciate 2 cases to extract the Euler angles $\phi$, $\theta$ and $\psi$.
+		The two different referentials are \lq{}ZYZ\rq{} and \lq{}RPZ\rq{}. They are not axed the same way, this is why we differenciate 2 cases to extract the Euler angles $\phi$, $\theta$ and $\psi$.
 		
 	\subsection{Extraction of the angles}
 	In \lq{}ZYZ\rq{} we have :

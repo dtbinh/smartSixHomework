@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.4.15)  28 OCT 2015 21:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.4.15)  28 OCT 2015 23:38
 entering extended mode
 **C:/Users/Emmanuel/Documents/GitHub/smartSixHomework/Report/report.tex
 (C:/Users/Emmanuel/Documents/GitHub/smartSixHomework/Report/report.tex
@@ -771,8 +771,19 @@ Underfull \hbox (badness 2384) in paragraph at lines 109--109
 []\T1/cmr/m/n/10.95 Figure 2.1: []Stick view of the
  []
 
+<images_not_compressed/schema.png, id=75, 792.71156pt x 676.77844pt>
+File: images_not_compressed/schema.png Graphic file (type png)
 
-Overfull \hbox (6.19446pt too wide) in paragraph at lines 148--156
+<use images_not_compressed/schema.png>
+Package pdftex.def Info: images_not_compressed/schema.png used on input line 14
+6.
+(pdftex.def)             Requested size: 256.0748pt x 218.62856pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (6.19446pt too wide) in paragraph at lines 153--161
 \T1/cmr/m/n/10.95 We learned dur-ing the lessons that : $\OML/cmm/m/it/10.95 A[
 ]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/i
 t/10.95 A[]A[] \OT1/cmr/m/n/10.95 = []$ 
@@ -785,39 +796,39 @@ sed/alphaAngles.png>]
 File: images_not_compressed/unisaLogo.jpg Graphic file (type jpg)
  <use images_not_compressed/unisaLogo.jpg>
 Package pdftex.def Info: images_not_compressed/unisaLogo.jpg used on input line
- 182.
+ 173.
 (pdftex.def)             Requested size: 56.9055pt x 56.90533pt.
- [4]
+ [4 <C:/Users/Emmanuel/Documents/GitHub/smartSixHomework/Report/images_not_comp
+ressed/schema.png>]
 File: images_not_compressed/unisaLogo.jpg Graphic file (type jpg)
-
-<use images_not_compressed/unisaLogo.jpg>
+ <use images_not_compressed/unisaLogo.jpg>
 Package pdftex.def Info: images_not_compressed/unisaLogo.jpg used on input line
- 197.
+ 202.
 (pdftex.def)             Requested size: 56.9055pt x 56.90533pt.
  [5]
 (C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.lof)
 \tf@lof=\write5
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
 
 [6
 
 ]
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 199.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 204.
  (C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 5D3C7A26266832C4407A8DC033A6251B;659.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
  ) 
 Here is how much of TeX's memory you used:
- 9668 strings out of 493921
- 132186 string characters out of 3148877
+ 9674 strings out of 493921
+ 132353 string characters out of 3148877
  232392 words of memory out of 3000000
- 12769 multiletter control sequences out of 15000+200000
+ 12773 multiletter control sequences out of 15000+200000
  19574 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 30i,15n,43p,516b,991s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,15n,43p,519b,991s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\eccc1095.pk> <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecbx1200.pk> <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\
@@ -838,9 +849,9 @@ Emmanuel/latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Emmanuel/latex
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Emmanuel/latex/fonts/type1
 /public/amsfonts/cm/cmsy6.pfb><C:/Users/Emmanuel/latex/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb>
-Output written on report.pdf (7 pages, 585277 bytes).
+Output written on report.pdf (7 pages, 601085 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 416 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
