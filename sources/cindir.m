@@ -26,10 +26,10 @@ function [ p, Phi, R, A] = cindir( q, EulerAngles )
     %----------------------------------------------------------------------------------------------------------
     
     limiti_giunto_inf = [-200 -200 2.9671   -3.0543    1.3963    3.6652   -2.2689    9.4248]; %m m radx6
-limiti_giunto_sup = [ 200  200 -2.9671    1.1345   -1.5708   -3.6652    2.2689   -3.1416]; %m m radx6
+    limiti_giunto_sup = [ 200  200 -2.9671    1.1345   -1.5708   -3.6652    2.2689   -3.1416]; %m m radx6
     
     if length(q) == 8 %Test of the dimension of the q vector
-    for i = [1,2,4,7]
+    for i = [1,2,4,7] % test of the limit inf for negative to positive range
        if q(i) < limiti_giunto_inf(i) 
            X = ['The value of the junction ',num2str(i),' is too little'];
            disp(X);
@@ -41,7 +41,7 @@ limiti_giunto_sup = [ 200  200 -2.9671    1.1345   -1.5708   -3.6652    2.2689  
            return;
        end
     end
-    for i = [3,5,6,8]
+    for i = [3,5,6,8] % test of the limit inf for positive to negative range
        if q(i) > limiti_giunto_inf(i) 
            X = ['The value of the junction ',num2str(i),' is too little'];
            disp(X);
