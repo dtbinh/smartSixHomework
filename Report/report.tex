@@ -14,6 +14,9 @@
 \usepackage[lastpage,user]{zref}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{listings}
+\usepackage{array}
+
 \cfoot{\thepage\ of \zpageref{LastPage}}
 \pagestyle{fancy}
 \usepackage[headsep=1cm,headheight=61pt,footskip=3cm]{geometry}
@@ -114,6 +117,31 @@
 	On the figure \ref{alpha} we can see the different axes of the robot. Each line correspond to a axe and the $Z$ vector corresponds to the rotation axe. Then, if we take the second line, we have to make a clockwise rotation of $\frac{\pi}{2}$ to get its $Z$ axe.\\
 	We also need a vector that we will call $a$ that stores the distances between the axes that have the same $Z$ orientation 2 by 2. We get this values in on the figure 4 of the documentation of the project. With the same figure we fill the $di$ vector which stores the distance of the axes that doesn\rq{}t have the same $Z$ orientation.
 	Finally, we create the $teta\_i$ vector to store the angles of in parameter of the function.
+	\begin{center}
+	\begin{figure}
+		\begin{tabular}{c|c|c|c|c|c}
+		Link & $\alpha$ & $\theta$ & a & d & $ \overline{q}$\\
+		\hline
+		1 & $\frac{\pi}{2}$ & 0 & 0 & $d_1$ &$ d_1$\\
+		\hline
+		2 & $\frac{\pi}{2}$ & 0 & 0 & $d_2$ & $d_2$\\
+		\hline
+		3 & $\frac{-\pi}{2}$ & $\theta_3$ & 0.15 & 0.45 & $\theta_3$\\
+		\hline
+		4 & 0 & $\theta_4$ & 0.59 & 0 & $\theta_4$\\
+		\hline
+		5 & $\frac{-\pi}{2}$ & $\theta_5$ & 0.13 & 0 & $\theta_5$ \\
+		\hline
+		6 & $\frac{\pi}{2}$ & $\theta_6$ & 0 & 0.64707 & $\theta_6$\\
+		\hline
+		7 & $\frac{-\pi}{2}$ & $\theta_7$ & 0 & 0 & $\theta_7$ \\
+		\hline
+		8 & 0 & $\theta_8$ & 0 & 0.095 & $\theta_8$\\
+		\end{tabular}
+	
+	\end{figure}
+	\end{center}
+	
 	
 	\subsection{Compute the matrix}
 	We learned during the lessons that :
@@ -124,6 +152,28 @@
 	0 &  s_{\alpha_{i}}  & c_{\alpha_{i}} & d_{i}\\
 	0 & 0 & 0 & 1
 	\end{bmatrix} $
+
+	To store efficently the values, we use a tridimentionnal matrix $4\times4\times8$ which makes a $4\times4$ per each junction. Using a for loop, we fill the matrix using the values of the $a$, $di$ and $teta\_i$ vectors.
+	
+	\subsection{Get the position and the rotation matrix relative to the end-effector}
+	
+	To get the position of the end-effector and the rotation matrix, we have to compute the general transition matrix denoted $T$. The formula is : $A^b_0\times\prod_{i=1}^n A^{n-1}_n\times A^n_e$.
+	It corresponds to the $A^b_e(\overline{q})$ which is equals to 
+	$\begin{bmatrix} 
+	R^b_e(\overline{q}) & O^b_e(\overline{q})\\
+	\overline{O}^T & 1
+	\end{bmatrix} $
+	It last to extract the $R^b_e(\overline{q})$ and the $O^b_e(\overline{q})$ matrices of the $A^b_e(\overline{q})$ matrix by writing :
+	\begin{lstlisting}
+	p = T([1 2 3], 4);
+	R = T([1 2 3], [1 2 3]);
+	 \end{lstlisting}
+	 
+	 There we have the $A$ transition matrix of all the junctions, the matrix of rotation from the base to the end-effector and the position of the end-effector. Now we will focus on the the Euler angles.
+	 
+	 
+	 \section{Get the Euler angles}
+	\subsection{Divide the different referentials}
 	
 	\newpage
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.4.15)  28 OCT 2015 18:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.4.15)  28 OCT 2015 21:13
 entering extended mode
 **C:/Users/Emmanuel/Documents/GitHub/smartSixHomework/Report/report.tex
 (C:/Users/Emmanuel/Documents/GitHub/smartSixHomework/Report/report.tex
@@ -568,69 +568,103 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(C:\Users\Emmanuel\latex\tex\latex\listings\listings.sty
+\lst@mode=\count114
+\lst@gtempboxa=\box29
+\lst@token=\toks23
+\lst@length=\count115
+\lst@currlwidth=\dimen121
+\lst@column=\count116
+\lst@pos=\count117
+\lst@lostspace=\dimen122
+\lst@width=\dimen123
+\lst@newlines=\count118
+\lst@lineno=\count119
+\lst@maxwidth=\dimen124
+
+(C:\Users\Emmanuel\latex\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count120
+\lst@skipnumbers=\count121
+\lst@framebox=\box30
+)
+(C:\Users\Emmanuel\latex\tex\latex\listings\listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(C:\Users\Emmanuel\latex\tex\latex\tools\array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen125
+\extrarowheight=\dimen126
+\NC@list=\toks24
+\extratabsurround=\skip57
+\backup@length=\skip58
+)
 (C:\Users\Emmanuel\latex\tex\latex\geometry\geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count114
-\Gm@cntv=\count115
-\c@Gm@tempcnt=\count116
-\Gm@bindingoffset=\dimen121
-\Gm@wd@mp=\dimen122
-\Gm@odd@mp=\dimen123
-\Gm@even@mp=\dimen124
-\Gm@layoutwidth=\dimen125
-\Gm@layoutheight=\dimen126
-\Gm@layouthoffset=\dimen127
-\Gm@layoutvoffset=\dimen128
-\Gm@dimlist=\toks23
+\Gm@cnth=\count122
+\Gm@cntv=\count123
+\c@Gm@tempcnt=\count124
+\Gm@bindingoffset=\dimen127
+\Gm@wd@mp=\dimen128
+\Gm@odd@mp=\dimen129
+\Gm@even@mp=\dimen130
+\Gm@layoutwidth=\dimen131
+\Gm@layoutheight=\dimen132
+\Gm@layouthoffset=\dimen133
+\Gm@layoutvoffset=\dimen134
+\Gm@dimlist=\toks25
 
 (C:\Users\Emmanuel\latex\tex\latex\geometry\geometry.cfg))
 (C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 (C:\Users\Emmanuel\latex\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count117
-\scratchdimen=\dimen129
-\scratchbox=\box29
-\nofMPsegments=\count118
-\nofMParguments=\count119
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count120
-\MPscratchDim=\dimen130
-\MPnumerator=\count121
-\makeMPintoPDFobject=\count122
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count125
+\scratchdimen=\dimen135
+\scratchbox=\box31
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen136
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks27
 )
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 51.
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring OFF on input line 54.
  (C:\Users\Emmanuel\latex\tex\latex\hyperref\nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (C:\Users\Emmanuel\latex\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count123
+\c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
-LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.out)
 (C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.out)
 \@outlinefile=\write3
+\c@lstlisting=\count132
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -666,20 +700,20 @@ LaTeX Info: Redefining \nameref on input line 51.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images_not_compressed/smart5.jpg, id=23, 205.76875pt x 246.9225pt>
+<images_not_compressed/smart5.jpg, id=35, 205.76875pt x 246.9225pt>
 File: images_not_compressed/smart5.jpg Graphic file (type jpg)
 
 <use images_not_compressed/smart5.jpg>
-Package pdftex.def Info: images_not_compressed/smart5.jpg used on input line 70
+Package pdftex.def Info: images_not_compressed/smart5.jpg used on input line 73
 .
 (pdftex.def)             Requested size: 227.62204pt x 273.14903pt.
 
-<images_not_compressed/unisaLogo.jpg, id=24, 225.84375pt x 225.84375pt>
+<images_not_compressed/unisaLogo.jpg, id=36, 225.84375pt x 225.84375pt>
 File: images_not_compressed/unisaLogo.jpg Graphic file (type jpg)
 
 <use images_not_compressed/unisaLogo.jpg>
 Package pdftex.def Info: images_not_compressed/unisaLogo.jpg used on input line
- 75.
+ 78.
 (pdftex.def)             Requested size: 113.81102pt x 113.81412pt.
  [1
 
@@ -703,42 +737,42 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 	\chapter
+l.83 	\chapter
               {Introduction} [1
 
 ]
 Chapter 1.
-<images_not_compressed/endEffector.png, id=46, 426.84468pt x 406.51875pt>
+<images_not_compressed/endEffector.png, id=61, 426.84468pt x 406.51875pt>
 File: images_not_compressed/endEffector.png Graphic file (type png)
 
 <use images_not_compressed/endEffector.png>
 Package pdftex.def Info: images_not_compressed/endEffector.png used on input li
-ne 88.
+ne 91.
 (pdftex.def)             Requested size: 256.0748pt x 243.89452pt.
  [2
 
  <C:/Users/Emmanuel/Documents/GitHub/smartSixHomework/Report/images_not_compres
 sed/endEffector.png>]
 Chapter 2.
-<images_not_compressed/alphaAngles.png, id=53, 344.78813pt x 427.5975pt>
+<images_not_compressed/alphaAngles.png, id=68, 344.78813pt x 427.5975pt>
 File: images_not_compressed/alphaAngles.png Graphic file (type png)
 
 <use images_not_compressed/alphaAngles.png>
 Package pdftex.def Info: images_not_compressed/alphaAngles.png used on input li
-ne 104.
+ne 107.
 (pdftex.def)             Requested size: 199.16928pt x 247.00845pt.
 
-Overfull \hbox (31.87038pt too wide) in paragraph at lines 104--106
+Overfull \hbox (31.87038pt too wide) in paragraph at lines 107--109
  [] 
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 106--106
+Underfull \hbox (badness 2384) in paragraph at lines 109--109
 []\T1/cmr/m/n/10.95 Figure 2.1: []Stick view of the
  []
 
 
-Overfull \hbox (6.19446pt too wide) in paragraph at lines 119--127
+Overfull \hbox (6.19446pt too wide) in paragraph at lines 147--155
 \T1/cmr/m/n/10.95 We learned dur-ing the lessons that : $\OML/cmm/m/it/10.95 A[
 ]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/i
 t/10.95 A[]A[] \OT1/cmr/m/n/10.95 = []$ 
@@ -751,32 +785,32 @@ sed/alphaAngles.png>]
 File: images_not_compressed/unisaLogo.jpg Graphic file (type jpg)
  <use images_not_compressed/unisaLogo.jpg>
 Package pdftex.def Info: images_not_compressed/unisaLogo.jpg used on input line
- 128.
+ 178.
 (pdftex.def)             Requested size: 56.9055pt x 56.90533pt.
  [4]
 (C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.lof)
 \tf@lof=\write5
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
 
 [5
 
 ]
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 132.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 182.
  (C:\Users\Emmanuel\Documents\GitHub\smartSixHomework\Report\report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 5F8CC4C8E5F291D1059EA7372BADB679;304.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
+(rerunfilecheck)             Checksum: 508B1576410A89C965B47B8ACCBBB7B4;581.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
  ) 
 Here is how much of TeX's memory you used:
- 8020 strings out of 493921
- 110650 string characters out of 3148877
- 205789 words of memory out of 3000000
- 11153 multiletter control sequences out of 15000+200000
+ 9656 strings out of 493921
+ 132022 string characters out of 3148877
+ 232392 words of memory out of 3000000
+ 12768 multiletter control sequences out of 15000+200000
  19574 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 30i,15n,43p,516b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,15n,43p,516b,991s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\eccc1095.pk> <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecbx1200.pk> <C:\Users\Emmanuel\AppData\Local\MiKTeX\2.9\fonts\
@@ -797,9 +831,9 @@ Emmanuel/latex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Emmanuel/latex
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Emmanuel/latex/fonts/type1
 /public/amsfonts/cm/cmsy6.pfb><C:/Users/Emmanuel/latex/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb>
-Output written on report.pdf (6 pages, 562529 bytes).
+Output written on report.pdf (6 pages, 579566 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
