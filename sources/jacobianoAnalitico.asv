@@ -1,0 +1,22 @@
+function [ Ja ] = jacobianoAnalitico( q, EulerAngles )
+
+    [ ~, Phi, ~, ~] = cindir(q, EulerAngles);
+    
+    %phi = 
+    Phi = Phi';
+    phi = Phi(1);
+    theta = Phi(2); % check if it's ok 
+    
+    
+    T = [ 0 -sin(phi) cos(theta)*sin(theta); ...
+        0 cos(phi) sin(phi)*sin(theta); ...
+        1 0 cos(theta)];
+    
+    Ta = [ eye(3,3) zeros(3,3); ...
+        zeros(3,3) T];
+    
+    J = JacobianoGeometrico(q);
+    
+    Ja = inv(Ta)*J
+    
+end
