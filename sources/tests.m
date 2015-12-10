@@ -8,5 +8,5 @@ EulerAngles = 'RPY';
 %[p, Phi, R, A] = cindir(q, 'RPY');
 
 
-Ja = jacobianoAnalitico(q, EulerAngles);
+Ja = pseudoInverseJacobian(q, EulerAngles);
 
